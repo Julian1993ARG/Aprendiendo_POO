@@ -1,1 +1,0 @@
-Son fuertes las cosas
