@@ -30,5 +30,35 @@ student.prototype.aprovarCurso = function(cursitoaprobado){
 
 const juanita = new student("Juanita Alejandra", 15,["Curso de la produccion de los videojuegos","Curso de manupulacion de personas para que hagan lo que quieras"])
 
-juanita.aprovarCurso("Casa de la chota")
-console.log(juanita.cursosAprobados)
+
+
+class student2 {
+    constructor({
+        name,
+        age,
+        email,
+        cursosAprobados =[],
+    }){
+        this.name = name;        
+        this.email = email;
+        this.age = age;
+        this.cursosAprobados = cursosAprobados;
+    }
+
+    aprovarCurso(cursitoaprobado){
+        this.cursosAprobados.push(cursitoaprobado);
+    }
+}
+
+const miguelito = new student2(
+    {
+        name:"Miguel",
+        email:"elcarlo@hotmail.com",
+        cursosAprobados:[""],
+        age:19
+        
+    })
+
+miguelito.aprovarCurso("pudiento hacer cosas cuando uno esta al pedo")    
+console.log(miguelito)
+
